@@ -24,13 +24,23 @@ public class LocateBy_Xpath {
 		System.out.println(test.getText());
 		
 		
-		//relative path
-		WebElement test2=driver.findElement(By.xpath("//div[@class='featured-box']//h4[1]//b[1]"));
-		System.out.println(test2.getText());
-		
-		//locate by contains xapath
-		WebElement test3=driver.findElement(By.xpath("//div[@class='featured-box']//h4[1]//b[1]"));
-		System.out.println(test2.getText());
+		//locate PerformanceTesting by relative xpath
+			WebElement prftest = driver.findElement(By.xpath("//div[@class='featured-box cloumnsize1']//h4[3]//b"));
+			System.out.println(prftest.getText());
+			
+		//locate SAP by relative xpath
+			WebElement sap = driver.findElement(By.xpath("//div[@class='featured-box']//h4//b"));
+			System.out.println(sap.getText());
+			
+		//locate SAP by contains xpath
+			WebElement txt = driver.findElement(By.xpath("//*[contains(@type, 'sub')]"));
+			System.out.println(txt.getText());
+			
+			
+			//locate SAP by or
+			WebElement s = driver.findElement(By.xpath("//[@type='submit' or @name='btnReset']"));
+			System.out.println(s.getText());
+			
 		
 		
 		
