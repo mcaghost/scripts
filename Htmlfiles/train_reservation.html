@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ratnagiri Trains</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Ratnagiri Tours</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">About Us</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+  <h1>Train Finder</h1>
+  <p>Make your train travel easier, penalty free and worry-free.</p>
+  <p>While booking a train ticket on the Ratnagiri Tours, buy ‘FREE Cancellation’ too.</p>
+  <div class="row">
+    <div class="col-sm-2" style="background-color:lavender;">
+    	<br>
+ 	 <div class="list-group">
+          <a href="flight_reservation.html" class="list-group-item">Flights</a>
+          <a href="hotel_search.html" class="list-group-item">Hotels</a>
+          <a href="train_reservation.html" class="list-group-item" onclick="myFun()">Trains</a>
+          <a href="#" class="list-group-item">Car Rentals</a>
+          <a href="#" class="list-group-item">Cruises</a>
+  	</div>
+    </div>
+    <div class="col-sm-6" style="background-color:lavenderblush;">
+    	<h2>Train Details</h2>
+ 	<form action="/action_page.php">
+            
+   	    <div class="radio">
+      			<label><input type="radio" name="train_dtls" value="bookTickets" checked>Book Tickets</label>
+    			<label><input type="radio" name="train_dtls" value="pnrstatus">Check PNR Status</label>
+			<label><input type="radio" name="train_dtls" value="livestatus">Check Live Status</label>
+            </div>
+            
+                      
+            <div>
+            <label> Departing From:
+            	<select name="fromPort" id="fromPort">
+  				<option value="Mumbai">Mumbai</option>
+    				<option value="Delhi">Delhi</option>
+    				<option value="Chipi">Chipi</option>
+                    <option value="Bangalore">Bangalore</option>
+    				<option value="Chandigarh">Chandigarh</option>
+                    <option value="Leh">Leh</option>
+    				<option value="Cochin">Cochin</option>
+                    <option value="Goa">Goa</option>
+    				<option value="Visakhapatnam">Visakhapatnam</option>
+  				</select>
+            </label>
+            </div>
+            
+            <div>
+            	<label> Departing On: <input type="datetime-local" id="departingDate" name="departingDate"></label>
+            </div>
+            
+                  
+            <div>
+           	 <label>Travel Class</label>
+           	 <div class="radio">
+            
+      			<label><input type="radio" name="travelClass" value="firstclass">First Class</label>
+                	<label><input type="radio" name="travelClass" value="firstclassAC">First AC</label>
+                	<label><input type="radio" name="travelClass" value="secondAC">Second AC</label>
+			<label><input type="radio" name="travelClass" value="ChairAC">AC Chair Car</label>
+			<label><input type="radio" name="travelClass" value="sleeper">Sleeper</label>
+    		
+           	 </div>
+           </div> 
+           
+           <label>Preferred Trains</label>
+           	<div class="checkbox">
+      			<label><input type="checkbox" name="Rajdhani" value="Rajdhani">Rajdhani</label>
+    		</div>
+    		<div class="checkbox">
+     			 <label><input type="checkbox" name="Duronto" value="Duronto">Duronto</label>
+    		</div>
+           	<div class="checkbox">
+     			 <label><input type="checkbox" name="Special Trains" value="Special Trains">Special Trains</label>
+    		</div>
+            	<div class="checkbox">
+     			 <label><input type="checkbox" name="Garib Rath" value="Garib Rath">Garib Rath</label>
+    		</div>
+   			<div class="checkbox disabled">
+      			<label><input type="checkbox" name="Shatabdi" value="Shatabdi" disabled>Shatabdi</label>
+    		</div>
+            	<div>
+			<input type="button" value="Confirm Details" onclick="myFun2()">            		
+			<input type="submit" value="Book Tickets" onclick="myFun1()">
+			<p id="demo"></p>
+            	</div>
+    	</form>
+  	</div>
+
+	
+        </div>
+	
+  </div>
+</div>
+    
+<script>
+function myFun() {
+  alert("All passengers are advised to wear face covers/masks at the entry/exit and during travel.All passengers are advised that on arrival at their destination, the travelling passenger shall follow the Covid protocol/guidelines issued by Ministry of Home affairs, Ministry of Health and Family Welfare and concerned State/UTs on the subject from time to time.");
+}
+</script>
+
+<script>
+function myFun2() {
+  let person = prompt("Please enter number of passengers", "1");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Do you want to book tickets for " + person + " person(s)?";
+  }
+}
+</script>
+
+<script>
+function myFun1() {
+  let text = "Do you want to continue?.";
+  if (confirm(text) == true) {
+    text = "You pressed OK!";
+  } else {
+    text = "You canceled!";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+
+</body>
+</html>

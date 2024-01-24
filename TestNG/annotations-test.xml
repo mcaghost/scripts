@@ -1,0 +1,17 @@
+<suite name="Annotations Testing" verbose="1">
+<test name="First Test">
+<groups name="testone"></groups>
+	<classes>
+		<class name="mypack.BeforeAfterannotations">
+		
+		
+		</class>
+	
+	
+	</classes>
+
+</test>
+
+
+
+</suite>

@@ -1,0 +1,24 @@
+<suite name="Multiple Test" verbose="1">
+	<test name="First Test">
+		<classes>
+			<class name="mypack.FirstTest">
+			<methods>
+					<include name="firstmethod" />
+			
+			</methods>
+			
+			</class>
+		</classes>
+	</test>
+	<test name="Second Test">
+		<classes>
+			<class name="mypack2.SecondTest">
+					<methods>
+						<include name="secondMethod" />
+			
+			</methods>
+			</class>
+		</classes>
+	</test>
+	
+</suite>

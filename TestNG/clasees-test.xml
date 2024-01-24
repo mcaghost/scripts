@@ -1,0 +1,10 @@
+<suite name="Classes Testing" verbose="1">
+	<test name="Class Test Cases">
+		<classes>
+			<class name="mypack.FirstTest"/>
+			<class name="mypack2.FirstTest"/>
+			<class name="mypack3.FirstTest"/>
+			
+		</classes>
+	</test>
+</suite>

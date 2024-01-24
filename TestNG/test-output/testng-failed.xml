@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parameterization]">
+  <test thread-count="5" name="Parameterization (failed)">
+    <parameter name="reviewer1_marks" value="4"/>
+    <classes>
+      <class name="mypack.Parameterization">
+        <methods>
+          <include name="if_shortlisted"/>
+        </methods>
+      </class> <!-- mypack.Parameterization -->
+    </classes>
+  </test> <!-- Parameterization (failed) -->
+</suite> <!-- Failed suite [Parameterization] -->

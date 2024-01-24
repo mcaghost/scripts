@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ratnagiri Tours</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Ratnagiri Tours</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">About Us</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+  <h1>Flight Finder</h1>
+  <p>Use our Flight Finder to search for the lowest fare on participating airlines. Once you've booked your flight, don't forget to visit the Ratnagiri Tours Hotel Finder to reserve lodging in Ratnagiri city.</p>
+  <div class="row">
+    <div class="col-sm-2" style="background-color:lavender;">
+    	<br>
+ 	 <div class="list-group">
+          <a href="flight_reservation.html" class="list-group-item">Flights</a>
+          <a href="hotel_search.html" class="list-group-item" onClick="popup('popup.html', 'ad')">Hotels</a>
+          <a href="train_reservation.html" class="list-group-item" onclick="myFunction()">Trains</a>
+          <a href="#" class="list-group-item">Car Rentals</a>
+          <a href="#" class="list-group-item">Cruises</a>
+  	</div>
+    </div>
+    <div class="col-sm-6" style="background-color:lavenderblush;">
+    	<h2>Flight Details</h2>
+ 	<form action="/action_page.php">
+            <label>Trip Type</label>
+   	    <div class="radio">
+      			<label><input type="radio" name="tripType" value="roundtrip" checked>Round Trip</label>
+    			<label><input type="radio" name="tripType" value="oneway">One Way</label>
+            </div>
+            
+            <div>
+            <label> Passengers: 
+            	<select name="passCount" id="passCount">
+  					<option value="1">1</option>
+    				<option value="2">2</option>
+    				<option value="3">3</option>
+  				</select>
+            </label>
+            </div>
+            
+            <div>
+            <label> Departing From:
+            	<select name="fromPort" id="fromPort">
+  					<option value="Mumbai">Mumbai</option>
+    				<option value="Delhi">Delhi</option>
+    				<option value="Chipi">Chipi</option>
+                    <option value="Bangalore">Bangalore</option>
+    				<option value="Chandigarh">Chandigarh</option>
+                    <option value="Leh">Leh</option>
+    				<option value="Cochin">Cochin</option>
+                    <option value="Goa">Goa</option>
+    				<option value="Visakhapatnam">Visakhapatnam</option>
+  				</select>
+            </label>
+            </div>
+            
+            <div>
+            	<label> Departing On: <input type="datetime-local" id="departingDate" name="departingDate"></label>
+            </div>
+            
+            <div>
+            	<label> Returning On: <input type="date" id="returningDate" name="returningDate"></label>
+            </div>
+            
+            <div>
+           	 <label>Traavel Class</label>
+           	 <div class="radio">
+            
+      			<label><input type="radio" name="travelClass" value="economy">Economy</label>
+                	<label><input type="radio" name="travelClass" value="PremiumEconomy">Premium Economy</label>
+                	<label><input type="radio" name="travelClass" value="business" disabled>Business</label>
+    		
+           	 </div>
+           </div> 
+           
+           <label>Preferred Airlines</label>
+           	<div class="checkbox">
+      			<label><input type="checkbox" name="Indigo" value="Indigo">IndiGo</label>
+    		</div>
+    		<div class="checkbox">
+     			 <label><input type="checkbox" name="Vistara" value="Vistara">Vistara</label>
+    		</div>
+           	<div class="checkbox">
+     			 <label><input type="checkbox" name="airIndia" value="airIndia">Air India</label>
+    		</div>
+            	<div class="checkbox">
+     			 <label><input type="checkbox" name="SpiceJet" value="SpiceJet">SpiceJet</label>
+    		</div>
+   			<div class="checkbox disabled">
+      			<label><input type="checkbox" name="airAsia" value="AirAsia" disabled>AirAsia</label>
+    		</div>
+            	<div>
+            		<input type="submit" value="Submit">
+            	</div>
+    	</form>
+  	</div>
+
+	<div class="col-sm-4" style="background-color:white;">
+		<div>
+    		 	<iframe name="frame1" id="IF1" src="iframe1.html" height="200" width="300" title="Iframe Example1"> IFrame 1</iframe> 
+		</div>
+
+
+		<div>
+    		 	<iframe name="frame2" id="IF2" src="iframe2.html" height="500" width="400" title="Iframe Example2"></iframe>
+		</div>
+
+
+        </div>
+	
+  </div>
+</div>
+   <script>
+function myFunction() {
+  alert("All passengers are advised to wear face covers/masks at the entry/exit and during travel.All passengers are advised that on arrival at their destination, the travelling passenger shall follow the Covid protocol/guidelines issued by Ministry of Home affairs, Ministry of Health and Family Welfare and concerned State/UTs on the subject from time to time.");
+}
+</script> 
+
+<SCRIPT TYPE="text/javascript">
+  function popup(mylink, windowname) { 
+    if (! window.focus)return true;
+    var href;
+    if (typeof(mylink) == 'string') href=mylink;
+    else href=mylink.href; 
+    window.open(href, windowname, 'width=800,height=400,scrollbars=yes'); 
+    return false; 
+  }
+</SCRIPT>
+</body>
+</html>

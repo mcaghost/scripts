@@ -1,0 +1,8 @@
+<suite name="Data Provider" verbose="1">
+
+<test name="testong data provider">
+	<classes>
+	<class name="mypack.DifferentDataProvider"></class>
+	</classes>
+</test>
+</suite>

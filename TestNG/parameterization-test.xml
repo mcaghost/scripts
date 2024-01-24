@@ -1,0 +1,12 @@
+<suite name="Parameterization" verbose="1">
+
+
+
+<test name="Parameterization ">
+<parameter name="reviewer1_marks" value="6"></parameter>
+<parameter name="reviewer1_marks" value="4"></parameter>
+	<classes>
+	<class name="mypack.Parameterization"></class>
+	</classes>
+</test>
+</suite>

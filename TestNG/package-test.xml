@@ -1,0 +1,9 @@
+<suite name="Package Testing" verbose="1">
+	<test name="Package Test Cases">
+		<packages>
+		<package name="mypack"></package>
+		<package name="mypack2"></package>
+		<package name="mypack3"></package>
+		</packages>
+	</test>
+</suite>

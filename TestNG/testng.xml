@@ -1,0 +1,13 @@
+<suite name="First Suite" verbose="1">
+	<test name="First Test">
+		<classes>
+			<class name="mypack.FirstTest">
+				<methods>
+					<include name="firstmethod" />
+					<include name="secondmethod"/>
+				</methods>
+
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,41 @@
+Xpath=//tagname[@Attribute='value']
+
+absolute xpath beggins with single forword slash " / " which means you select the elements from the root node
+
+/html/body/div[4]/div[1]/div/h4[1]/b   //absolute path
+
+
+//div[@class='featured-box cloumnsize1']//h4[3]//b[1]
+
+//*[contains(@type,'sub')]
+//*[contains(@type,'text')]
+//*[contains(@type,'pass')]
+
+//*[contains(@type,'message')]
+
+//*[@type='submit' or @name='btnReset']
+
+//*[@type='reset' and @name='btnReset']
+
+//label[starts-with(@id,'message')]
+
+//td[text()='UserID'] 			 --------------//text() function--------
+//td[text()='Password']
+
+//*[@type='text']//following::input[2]
+
+//*[text()='Enterprise Testing']//ancestor::div
+
+
+//*[@id='java_technologies']//child::li
+//*[@id='java_technologies']//child::li[1]
+
+//*[@type='submit']//following-siblings::input
+
+
+
+‬
+
+
+
+
